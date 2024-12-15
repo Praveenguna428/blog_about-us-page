@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;  
+    background: linear-gradient(to bottom, #f4f4f9, #e0e7ff); 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Layout Styles */
+header, main, footer {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #6c63ff, #8360c3);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #e0e7ff;
+}
+
+/* Section Styles */
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #444;
+    border-left: 4px solid #6c63ff;
+    padding-left: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Link Styles */
+.contact-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #5048e5;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #6c63ff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, main, footer {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
